@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="81.342">
+<testcase classname="Place an Order in Techlistic" name="Automate End to End Buy Order functionality" time="80.494">
+<system-out><![CDATA[Given User is on Techlistic Login page......................................passed
+When User clicks on sign in providing Username and Password.................passed
+Then the Homepage is displayed..............................................passed
+When User clicks on T-Shirts submenu under Womens menu......................passed
+Then the T-Shirts list page is displayed....................................passed
+When User clicks on More button on 1st T-Shirt..............................passed
+Then the customize product page is displayed................................passed
+When User adds T-Shirt by customizing and clicks on checkout................passed
+Then the Checkout page is displayed.........................................passed
+When User Checkout the T-Shirt by confirming................................passed
+Then the order Confirmation message is displayed............................passed
+]]></system-out>
+</testcase>
+</testsuite>

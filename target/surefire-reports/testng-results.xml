@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Techlistic BBD TestNG" duration-ms="92858" started-at="2020-08-18T22:36:14 IST" finished-at="2020-08-18T22:37:47 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@6536e911]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Techlistic BBD" duration-ms="92858" started-at="2020-08-18T22:36:14 IST" finished-at="2020-08-18T22:37:47 IST">
+      <class name="testRunner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.TestRunner@6536e911]" name="setUpClass" is-config="true" duration-ms="6994" started-at="2020-08-18T22:36:14 IST" finished-at="2020-08-18T22:36:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@6536e911]" name="runScenario" duration-ms="81098" started-at="2020-08-18T22:36:21 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-18T22:37:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Automate End to End Buy Order functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Place an Order in Techlistic]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@6536e911]" name="tearDownClass" is-config="true" duration-ms="4591" started-at="2020-08-18T22:37:42 IST" finished-at="2020-08-18T22:37:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.TestRunner -->
+    </test> <!-- Techlistic BBD -->
+  </suite> <!-- Techlistic BBD TestNG -->
+</testng-results>
