@@ -27,6 +27,8 @@ public class CheckOutPage extends BasePage{
 	private By paybyBankWire = By.xpath("//a[@title='Pay by bank wire']");
 	private By confirmOrderbtn = By.xpath("//button[@type='submit']/span[contains(text(),'I confirm my order')]");
 	private By OrderConfSuccessMsg = By.xpath("//strong[@class='dark'][contains(text(),'Your order on My Store is complete.')]");
+	
+	private By loginErrorMsg = By.xpath("//script[@type='text/javascript'][contains(text(),'You must be logged in to manage your wishlist.')]");
 
 	
 	public String getCheckoutPageTitle() {
@@ -42,20 +44,58 @@ public class CheckOutPage extends BasePage{
 	return successMsg;
 	}
 	
-	public void orderCheckout() {
+	public void proceedToSignin() {
 		getWebElement(proceedToCheckoutbtn).click();
 		waitTillShoppingCartPageLoads();
+	}
+	
+	public void proceedToAddress() {
 		getWebElement(proceedToCheckoutbtn).click();
 		waitTillShoppingCartPageLoads();
+	}
+	
+	public void proceedToShipping() {
+		getWebElement(proceedToCheckoutbtn).click();
+		waitTillShoppingCartPageLoads();
+	}
+	
+	public void acceptTermsOfServiceInShippingTab() {
 		getWebElement(termsOfService).click();
+	}
+	
+	public void proceedToPayment() {
 		getWebElement(proceedToCheckoutbtn).click();
 		waitTillShoppingCartPageLoads();
+	}
+	
+	public void selectPaybyBankWire() {
 		getWebElement(paybyBankWire).click();
 		waitTillShoppingCartPageLoads();
+	}
+	
+	public void clickOnConfirmMyOrder() {
 		getWebElement(confirmOrderbtn).click();
 		waitTillShoppingCartPageLoads();
+	}
+	
+	public String verifyLoginMandatoryErrorMessage() {
+		String bodyText = getWebElement(loginErrorMsg).getText();
+		return bodyText;
+	}
+	
+	public void orderCheckoutNonSigninUser() {
+		proceedToSignin();
 		
-		
+	}
+	
+	public void orderCheckoutSignedinUser() {
+		proceedToAddress();
+		proceedToShipping();
+		acceptTermsOfServiceInShippingTab();
+		proceedToPayment();
+		selectPaybyBankWire();
+		clickOnConfirmMyOrder();
+			
 	}
 	
 	

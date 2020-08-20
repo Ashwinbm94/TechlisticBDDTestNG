@@ -61,7 +61,6 @@ public class CustomizeProductPage extends BasePage {
 
 	// Customize and Add Product to cart
 	public CheckOutPage customizeAndAddProductToCart(int quantity, String size, String color) {
-		driver.manage().timeouts().pageLoadTimeout(Utility.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		increaseProductQty(quantity);
 		selectSize(size);
 		try {
