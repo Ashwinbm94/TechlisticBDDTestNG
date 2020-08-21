@@ -129,8 +129,8 @@ public class PlaceAnOrderStepDefinition extends BaseTest {
 
 	@Then("User should see Sign in tab")
 	public void user_should_see_sign_in_tab() {
-		String checkOutPageTitle = checkOutPage.getCheckoutPageTitle();
-		Assert.assertEquals("Error occured while product checkout", "Order - My Store", checkOutPageTitle);
+		String signinTabCheckOutPageTitle = checkOutPage.getCheckoutPageTitle();
+		Assert.assertEquals("Error occured while product checkout", "Login - My Store", signinTabCheckOutPageTitle);
 	
 	}
 	
